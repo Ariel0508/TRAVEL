@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>travel</title>
+  <script type="module" crossorigin src="/TRAVEL/assets/index-26138cf8.js"></script>
+  <link rel="stylesheet" href="/TRAVEL/assets/index-fe5fac10.css">
+</head>
+
+<body>
+  <section class="travel">
+    <div class="container mt-lg-120 mb-4 mb-lg-100">
+      <div class="row">
+        <div class="travel-content col-lg-9 mx-auto py-lg-60">
+          <div class="container">
+            <div class="row gap-30 align-items-center justify-content-center">
+              <div class="travel-pic col-lg-5">
+                <div class="gap-20">
+                  <img src="/TRAVEL/assets/main_img-1918b0d0.png" alt="main_img">
+                  <img class="d-none d-lg-block" src="/TRAVEL/assets/logo-86a655b0.png" alt="logo">
+                </div>
+              </div>
+              <div class="travel-form col-lg-5">
+                <h2 class="fs-4 text-primary travel-border p-1">
+                  <span class="material-symbols-outlined icon-unfilled icon-size me-6">
+                    add_circle
+                  </span>新增旅遊套票
+                </h2>
+                <form action="#" class="ticket-form">
+                  <div class="mt-32 d-flex justify-content-between align-items-center">
+                    <label for="ticket-name" class="w-25 text-primary fw-medium">套票名稱</label>
+                    <input type="text" class="w-75 form-control-style" id="ticket-name" placeholder="請填寫套票名稱">
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="picture" class="w-25 text-primary fw-medium">圖片網址</label>
+                    <input type="text" class="w-75 form-control-style" id="picture" placeholder="請填寫圖片網址">
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="area" class="w-25 text-primary fw-medium">景點地區</label>
+                    <select id="area" class="w-75 form-select form-control-style text-dark"
+                      aria-label="Default select example">
+                      <option selected>請選擇景點地區</option>
+                      <option value="台北">台北</option>
+                      <option value="台中">台中</option>
+                      <option value="高雄">高雄</option>
+                    </select>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="ticket-price" class="w-25 text-primary fw-medium">套票金額</label>
+                    <input type="number" class="w-75 form-control-style" id="ticket-price" placeholder="請填寫套票金額">
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="ticket-num" class="w-25 text-primary fw-medium">套票組數</label>
+                    <input type="text" class="w-75 form-control-style" id="ticket-num" placeholder="請填寫套票組數">
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="ticket-star" class="w-25 text-primary fw-medium">套票星級</label>
+                    <input type="text" class="w-75 form-control-style" id="ticket-star" placeholder="請填寫套票星級">
+                  </div>
+                  <div class="mt-3 d-flex justify-content-between align-items-center">
+                    <label for="ticket-desc" class="w-25 text-primary fw-medium">套票描述</label>
+                    <textarea class="w-75 form-control-style" id="ticket-desc" rows="4" maxlength="100"
+                      placeholder="請填寫套票描述（限 100 字）"></textarea>
+                  </div>
+                  <div class="text-center text-lg-end">
+                    <input class="my-4 mt-lg-4 mb-lg-0 fs-5 form-btn btn btn-primary" type="submit" value="新增套票"
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="travel-info">
+    <div class="container pt-lg-56 pb-5 pb-lg-120">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="container">
+            <div class="col-lg-5 d-flex align-items-center justify-content-between gap-30">
+              <select id="search-area" class="search-area w-50 my-56 form-select form-control-style text-dark"
+                aria-label="search-area">
+                <option value="" disabled selected hidden>地區搜尋</option>
+                <option value="全部地區">全部地區</option>
+                <option value="台北">台北</option>
+                <option value="台中">台中</option>
+                <option value="高雄">高雄</option>
+                <option value="花蓮">花蓮</option>
+              </select>
+              <div class="search-num w-50">
+                本次搜尋共 6 筆資料
+              </div>
+            </div>
+            <ul class="card-list row row-cols-1 row-cols-md-2 row-cols-lg-3">
+              <!-- card -->
+            </ul>
+            <div class="cantFind-area text-center">
+              <h3 class="mb-5 text-primary fs-3">查無此關鍵字資料</h3>
+              <img src="/TRAVEL/assets/no_found-e4426d48.png" alt="no_found">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>
