@@ -25,13 +25,15 @@ const updateChart = () => {
     bindto: "#chart",
     data: {
       columns: newData,
-      type: "donut"
+      type: "donut",
+      colors: {
+          台北:"#26C0C7", 
+          台中:"#5151D3", 
+          高雄:"#E68618"
+      },
     },
     size: {
       width: 200
-    },
-    color: {
-      pattern: ["#26C0C7", "#5151D3", "#E68618"]
     },
     donut: {
       title: "套票地區比重",
